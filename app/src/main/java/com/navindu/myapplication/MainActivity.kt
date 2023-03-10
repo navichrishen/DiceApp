@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //val aboutBt = findViewById<Button>(R.id.android.about)
         aboutBt()
+        newGameBt()
     }
     fun aboutBt(){
         aboutBt.setOnClickListener {
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
                     "The work that I have submitted is entirely my own. Any work from other authors is duly referenced and acknowledged.")
             builder.setNeutralButton("Cancel") { dialog, id -> dialog.cancel()}
             builder.show()
+        }
+    }
+    fun newGameBt(){
+        newgame.setOnClickListener {
+            setContentView(R.layout.game_activity)
         }
     }
 
