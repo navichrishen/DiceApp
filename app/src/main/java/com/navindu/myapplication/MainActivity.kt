@@ -1,6 +1,7 @@
 package com.navindu.myapplication
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
@@ -15,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         aboutBt()
         newGameBt()
     }
+    fun newGameBt(){
+        newgame.setOnClickListener {
+            startActivity(Intent(this,GameActivity::class.java))
+        }
+    }
     fun aboutBt(){
         aboutBt.setOnClickListener {
             val builder = AlertDialog.Builder(this)
@@ -25,11 +31,7 @@ class MainActivity : AppCompatActivity() {
             builder.show()
         }
     }
-    fun newGameBt(){
-        newgame.setOnClickListener {
-            setContentView(R.layout.game_activity)
-        }
-    }
+
 
 }
 
