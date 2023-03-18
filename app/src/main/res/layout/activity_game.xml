@@ -154,8 +154,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
 
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="80dp"
         android:fontFamily="@font/opensanssemibold"
         android:text="You"
@@ -165,16 +165,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/currentwins" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="256dp"
+        android:layout_width="102dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="249dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/opensanssemibold"
-        android:text="Your Score |"
+        android:text="Your Score | "
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -185,10 +185,10 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="242dp"
+        android:layout_marginStart="236dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/opensanssemibold"
-        android:text="Device Score |"
+        android:text="Device Score | "
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -202,6 +202,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/opensanssemibold"
+        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -215,6 +216,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/opensanssemibold"
+        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -222,7 +224,7 @@
         app:layout_constraintTop_toBottomOf="@+id/playerscore" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/rerollBt"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -234,6 +236,35 @@
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toEndOf="@+id/scoreBt"
         app:layout_constraintTop_toBottomOf="@+id/rollBt" />
+
+    <Button
+        android:id="@+id/scoresetBt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/subbuttons"
+        android:fontFamily="@font/opensanssemibold"
+        android:text="Set Score"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollBt"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/currentwins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/opensanssemibold"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
